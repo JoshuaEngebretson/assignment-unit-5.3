@@ -39,6 +39,12 @@ console.log('My album collection now includes:', collection);
     // Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
     // Console.log the number of items in the array.
     // Loop over the array and console.log each album's information formatted like: TITLE by ARTIST, published in YEAR.
+function showCollection(array) {
+    console.log(array.length);
+    for (let i = 0; i < array.length; i++) {
+        console.log(`${array.albumTitle} by ${array.artistName}, published in ${array.albumPublished}`);
+    }
+}
 
 
 // Test the showCollection function.
