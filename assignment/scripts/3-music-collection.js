@@ -4,7 +4,7 @@ console.log('***** Music Collection *****')
 // Create a variable collection that starts as an empty array.
 let collection = [];
 
-
+console.log('--- addToCollection ---');
 // Add a function named addToCollection. This function should:
     // Take in the album's title, artist, yearPublished as input parameters
 function addToCollection(title, artist, yearPublished){
@@ -35,12 +35,13 @@ console.log('Adding new album to my collection:', addToCollection('Dark Eyes', '
 console.log('My album collection now includes:', collection);
 
 
+console.log('--- showCollection ---');
 // Add a function named showCollection. This function should:
     // Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
-    // Console.log the number of items in the array.
-    // Loop over the array and console.log each album's information formatted like: TITLE by ARTIST, published in YEAR.
 function showCollection(array) {
-    console.log(array.length);
+    // Console.log the number of items in the array.
+    console.log('The following', array.length, 'albums are in my collection');
+    // Loop over the array and console.log each album's information formatted like: TITLE by ARTIST, published in YEAR.
     for (let i = 0; i < array.length; i++) {
         console.log(`${array[i].albumTitle} by ${array[i].artistName}, published in ${array[i].albumPublished}.`);
     }
@@ -54,10 +55,18 @@ console.log(showCollection(collection));
 
 // Add a function named findByArtist. This function should:
     // Take in artist (a string) parameter
+function findByArtist(artist){
     // Create an array to hold any results, empty to start
+    let albums_by_artist = []
     // Loop through the collection and add any objects with a matching artist to the array.
+    for (let i = 0; i < collection.length; i++){
+        if (collection[i].artistName === artist) {
+            albums_by_artist.push(collection[i])
+        }
+    }
     // Return the array with the matching results. If no results are found, return an empty array.
-
+    return albums_by_artist
+}
 
 // Test the findByArtist function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found.
 
