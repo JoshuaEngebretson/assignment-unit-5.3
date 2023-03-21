@@ -25,6 +25,14 @@ function addToCollection(title, artist, yearPublished){
     // Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
     // Console.log each album as added using the returned value.
     // After all are added, console.log the collection array.
+console.log('Adding new album to my collection:', addToCollection('Camp', 'Childish Gambino', 2011));
+console.log('Adding new album to my collection:', addToCollection('Awaken, My Love!', 'Childish Gambino', 2016));
+console.log('Adding new album to my collection:', addToCollection('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022));
+console.log('Adding new album to my collection:', addToCollection('Castor, The Twin', 'Dessa', 2011));
+console.log('Adding new album to my collection:', addToCollection('Cleopatra (Deluxe)', 'The Lumineers', 2016));
+console.log('Adding new album to my collection:', addToCollection('Dark Eyes', 'Half Moon Run', 2013));
+
+console.log('My album collection now includes:', collection);
 
 
 // Add a function named showCollection. This function should:
