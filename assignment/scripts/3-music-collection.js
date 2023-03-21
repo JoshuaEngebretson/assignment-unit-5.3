@@ -42,12 +42,14 @@ console.log('My album collection now includes:', collection);
 function showCollection(array) {
     console.log(array.length);
     for (let i = 0; i < array.length; i++) {
-        console.log(`${array.albumTitle} by ${array.artistName}, published in ${array.albumPublished}`);
+        console.log(`${array[i].albumTitle} by ${array[i].artistName}, published in ${array[i].albumPublished}.`);
     }
+    return `End showCollection`
 }
 
 
 // Test the showCollection function.
+console.log(showCollection(collection));
 
 
 // Add a function named findByArtist. This function should:
