@@ -69,6 +69,9 @@ function findByArtist(artist){
 }
 
 // Test the findByArtist function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found.
+console.log('Is Metallica in my current collection? Expected [] ---->', findByArtist('Metallica'));
+console.log('Is Dessa in my current collection?', findByArtist('Dessa'));
+console.log('Is Childish Gambino in my currenct collection?', findByArtist('Childish Gambino'));
 
 
 // When testing your functions, write all tests in the JavaScript file!
