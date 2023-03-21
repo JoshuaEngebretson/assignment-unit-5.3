@@ -79,14 +79,37 @@ console.log('Is Childish Gambino in my currenct collection?', findByArtist('Chil
 
 
 // Stretch goals
+console.log('--- Stretch Goals ---');
 // Create a function called search. This function should:
     // Take an input parameter for a search criteria object. Create your solution based on a search object that has these properties:
         // { artist: 'Ray Charles', year: 1957 }
+console.log('Adding new album to my collection:', addToCollection('Ray Charles', 'Ray Charles', 1957));
+/* This was Ray Charles' first studio album, it was later re-released under the tile of Hallelujah I Love Her So in 1962
+*/
+
+function search(collectionToSearch, artist_name, albumYear){
+    let albums_matching_parameters = []
+    for (let i = 0; i < collectionToSearch.length; i++) {
+        if (collectionToSearch[i].artistName === artist_name && collectionToSearch[i].albumPublished === albumYear) {
+            albums_matching_parameters.push(collectionToSearch[i])
+        }
+    }
     // The returned output from search should meet these requirements:
         // Return a new array of all items in the collection matching all of the search criteria.
         // If no results are found, return an empty array.
         // If there is no search object or an empty search object provided as input, then return all albums in the collection.
+    if( artist_name === undefined || albumYear === undefined ){
+        return collectionToSearch
+    }
+    return albums_matching_parameters
+}
 
+console.log('Expected one album. --->', search(collection, 'Ray Charles', 1957));
+console.log('Expected whole collection due to missing parameter. --->', search(collection, 'Ray Charles'));
+console.log('Expected empty array. --->', search(collection, 'Metallica', 1991));
+
+addToCollection('Test multiple ablums', 'Ray Charles', 1957)
+console.log('Expected 2 albums. --->', search(collection, 'Ray Charles', 1957));
 
 // Add an array of tracks to your album objects. Each track should have a name and duration. You will need to update the functions to support this new property:
     // Update the addToCollection function to also take an input parameter for the array of tracks.
