@@ -98,6 +98,7 @@ console.log('Adding new album to my collection:', addToCollection('Ray Charles',
 function search(artist_name, albumYear, trackName){
     let albums_matching_parameters = []
     for (let i = 0; i < collection.length; i++) {
+        // for (track of collection[i].tracks)
         if (trackName === collection[i].track) {
             albums_matching_parameters.push(collection[i])
             break
@@ -140,3 +141,29 @@ console.log('Expected 2 albums. --->', search('Ray Charles', 1957, 'Mary Ann'));
 
 
 
+/*
+Below is my attempt at trying to get the serach parameter to be an object.
+This did not work out as the way I wanted or intended it to, but I'm not sure where I messed up.
+
+I have decided to leave this in incase I am able to get any guidance around what is wrong here.
+*/
+// function search(searchCriteria={artist:'', year:'', trackName:''}){
+//     let albums_matching_parameters = []
+//     for (let i = 0; i < collection.length; i++) {
+//         if (searchCriteria.trackName === collection[i].track) {
+//             albums_matching_parameters.push(collection[i])
+//             break
+//         }
+//         else if (collection[i].artist === searchCriteria.artist && collection[i].yearPublished === searchCriteria.year) {
+//             albums_matching_parameters.push(collection[i])
+//         }
+//     }
+//     // The returned output from search should meet these requirements:
+//         // Return a new array of all items in the collection matching all of the search criteria.
+//         // If no results are found, return an empty array.
+//         // If there is no search object or an empty search object provided as input, then return all albums in the collection.
+//     if( searchCriteria.artist === undefined || searchCriteria.albumYear === undefined || searchCriteria.trackName === undefined){
+//         return collection
+//     }
+//     return albums_matching_parameters
+// }
