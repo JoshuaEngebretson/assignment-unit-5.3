@@ -30,7 +30,7 @@ console.log('Adding new album to my collection:', addToCollection('Camp', 'Child
 
 console.log('Adding new album to my collection:', addToCollection('Awaken, My Love!', 'Childish Gambino', 2016, [{name: 'Me and Your Mama', duration: '6m 19s'}, {name: 'Have Some Love', duration: '3m 44s'}, {name: 'Boogieman', duration: '3m 36s'}, {name: 'Zombies', duration: '4m 41s'}, {name: 'Riot', duration: '2m 05s'}, {name: 'Redbone', duration: '5m 26s'}, {name: 'California', duration: '2m 45s'}, {name: 'Terrified', duration: '4m 15s'}, {name: 'Baby Boy', duration: '6m 22s'}, {name: 'The Night Me and Your Mama Met', duration: '3m 34s'}, {name: 'Stand Tall', duration: '6m 10s'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022));
+console.log('Adding new album to my collection:', addToCollection('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022, [{name: 'United in Grief', duration: '4m 15s'}, {name: 'N95', duration: '3m 15s'}, {name: 'Worldwide Steppers', duration: '3m 23s'}, {name: 'Die Hard', duration: '3m 59s'}, {name: 'Father Time', duration: '3m 42s'}, {name: 'Rich (Interlude)', duration: '1m 43s'}, {name: 'Rich Spirit', duration: '3m 22s'}, {name: 'We Cry Together', duration: '5m 41s'}, {name: 'Purple Hearts', duration: '5m 29s'}, {name: 'Count Me Out', duration: '4m 43s'}, {name: 'Crown', duration: '4m 24s'}, {name: 'Silent Hill', duration: '3m 40s'}, {name: 'Savior (Interlude)', duration: '2m 32s'}, {name: 'Savior', duration: '3m 44s'}, {name: 'Auntie Diaries', duration: '4m 41s'}, {name: 'Mr. Morale', duration: '3m 30s'}, {name: 'Mother I Sober', duration: '6m 46s'}, {name: 'Mirror', duration: '4m 16s'}, {name: 'The Heart Part 5', duration: '5m 32s'}]));
 
 console.log('Adding new album to my collection:', addToCollection('Castor, The Twin', 'Dessa', 2011));
 
@@ -143,7 +143,6 @@ console.log(collection[0]);
 console.log(collection[1]);
 
 // collection[2] = ('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022));
-collection[2].tracks=[{name: '', duration: ''}]
 
 console.log(collection[2]);
 
