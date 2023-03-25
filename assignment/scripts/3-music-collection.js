@@ -91,33 +91,37 @@ console.log('\n--- Stretch Goals ---\n\n');
 // Create a function called search. This function should:
     // Take an input parameter for a search criteria object. Create your solution based on a search object that has these properties:
         // { artist: 'Ray Charles', year: 1957 }
-console.log('Adding new album to my collection:', addToCollection('Ray Charles', 'Ray Charles', 1957, [{name: `Ain't That Love`, duration: '2:51'}, {name: 'Drown in My Own Tears', duration: '3:21'}, {name: 'Come Back Baby', duration: '3:06'}, {name: `Sinner's Prayer`, duration: '3:24'}, {name: 'Funny (But I Still Love You', duration: '3:15'}, {name: 'Losing Hand', duration: '3:14'}, {name: 'A Fool for You', duration: '3:03'}, {name: 'Halleluja I Love Her So', duration: '2:35'}, {name: 'Mess Around', duration: '2:40'}, {name: 'This Little Girl of Mine', duration: '2:33'}, {name: 'Mary Ann', duration: '2:48'}, {name: 'Greenbacks', duration: '2:52'}, {name: `Don't You Know`, duration: '2:57'}, {name: 'I Got a Woman', duration: '2:51'}]));
+console.log('Adding new album to my collection:', addToCollection('Ray Charles', 'Ray Charles', 1957, [{name: `Ain't That Love`, duration: '2:51'}, {name: 'Drown in My Own Tears', duration: '3:21'}, {name: 'Come Back Baby', duration: '3:06'}, {name: `Sinner's Prayer`, duration: '3:24'}, {name: 'Funny (But I Still Love You', duration: '3:15'}, {name: 'Losing Hand', duration: '3:14'}, {name: 'A Fool for You', duration: '3:03'}, {name: 'Hallelujah I Love Her So', duration: '2:35'}, {name: 'Mess Around', duration: '2:40'}, {name: 'This Little Girl of Mine', duration: '2:33'}, {name: 'Mary Ann', duration: '2:48'}, {name: 'Greenbacks', duration: '2:52'}, {name: `Don't You Know`, duration: '2:57'}, {name: 'I Got a Woman', duration: '2:51'}]));
 /* This was Ray Charles' first studio album, it was later re-released under the tile of Hallelujah I Love Her So in 1962
 */
 
-function search(collectionToSearch, artist_name, albumYear){
+function search(artist_name, albumYear, trackName){
     let albums_matching_parameters = []
-    for (let i = 0; i < collectionToSearch.length; i++) {
-        if (collectionToSearch[i].artist === artist_name && collectionToSearch[i].yearPublished === albumYear) {
-            albums_matching_parameters.push(collectionToSearch[i])
+    for (let i = 0; i < collection.length; i++) {
+        if (trackName === collection[i].track) {
+            albums_matching_parameters.push(collection[i])
+            break
+        }
+        else if (collection[i].artist === artist_name && collection[i].yearPublished === albumYear) {
+            albums_matching_parameters.push(collection[i])
         }
     }
     // The returned output from search should meet these requirements:
         // Return a new array of all items in the collection matching all of the search criteria.
         // If no results are found, return an empty array.
         // If there is no search object or an empty search object provided as input, then return all albums in the collection.
-    if( artist_name === undefined || albumYear === undefined ){
-        return collectionToSearch
+    if( artist_name === undefined || albumYear === undefined || trackName === undefined){
+        return collection
     }
     return albums_matching_parameters
 }
 
-console.log('Expected one album. --->', search(collection, 'Ray Charles', 1957));
-console.log('Expected whole collection due to missing parameter. --->', search(collection, 'Ray Charles'));
-console.log('Expected empty array. --->', search(collection, 'Metallica', 1991));
+console.log('Expected one album. --->', search('Ray Charles', 1957, 'Mary Ann'));
+console.log('Expected whole collection due to missing parameter. --->', search('Ray Charles'));
+console.log('Expected empty array. --->', search('Metallica', 1991, 'The Unforgiven'));
 
 addToCollection('Test multiple ablums', 'Ray Charles', 1957)
-console.log('Expected 2 albums. --->', search(collection, 'Ray Charles', 1957));
+console.log('Expected 2 albums. --->', search('Ray Charles', 1957, 'Mary Ann'));
 
 
 
