@@ -26,13 +26,13 @@ function addToCollection(title, artist, yearPublished, tracks){
     // Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
     // Console.log each album as added using the returned value.
     
-console.log('Adding new album to my collection:', addToCollection('Camp', 'Childish Gambino', 2011, [{name: 'Outside', duration: '4m 30s'}, {name: 'Fire Fly', duration: '3m 23s'}, {name: 'Bonfire', duration: '3m 13s'}, {name: 'All the Shine', duration: '5m 46s'}, {name: 'Letter Home', duration: '1m 44s'}, {name: 'Heartbeat', duration: '4m 30s'}, {name: 'Backpackers', duration: '3m 16s'}, {name: 'Les', duration: '5m 17s'}, {name: 'Hold You Down', duration: '4m 53s'}, {name: 'Kids', duration: '4m 58s'}, {name: 'You See Me', duration: '3m 15s'}, {name: 'Sunrise', duration: '3m 40s'}, {name: 'That Power', duration: '7m 42s'}]));
+console.log('Adding new album to my collection:', addToCollection('Camp', 'Childish Gambino', 2011, [{name: 'Outside', duration: '4:30'}, {name: 'Fire Fly', duration: '3:23'}, {name: 'Bonfire', duration: '3:13'}, {name: 'All the Shine', duration: '5:46'}, {name: 'Letter Home', duration: '1:44'}, {name: 'Heartbeat', duration: '4:30'}, {name: 'Backpackers', duration: '3:16'}, {name: 'Les', duration: '5:17'}, {name: 'Hold You Down', duration: '4:53'}, {name: 'Kids', duration: '4:58'}, {name: 'You See Me', duration: '3:15'}, {name: 'Sunrise', duration: '3:40'}, {name: 'That Power', duration: '7:42'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Awaken, My Love!', 'Childish Gambino', 2016, [{name: 'Me and Your Mama', duration: '6m 19s'}, {name: 'Have Some Love', duration: '3m 44s'}, {name: 'Boogieman', duration: '3m 36s'}, {name: 'Zombies', duration: '4m 41s'}, {name: 'Riot', duration: '2m 05s'}, {name: 'Redbone', duration: '5m 26s'}, {name: 'California', duration: '2m 45s'}, {name: 'Terrified', duration: '4m 15s'}, {name: 'Baby Boy', duration: '6m 22s'}, {name: 'The Night Me and Your Mama Met', duration: '3m 34s'}, {name: 'Stand Tall', duration: '6m 10s'}]));
+console.log('Adding new album to my collection:', addToCollection('Awaken, My Love!', 'Childish Gambino', 2016, [{name: 'Me and Your Mama', duration: '6:19'}, {name: 'Have Some Love', duration: '3:44'}, {name: 'Boogieman', duration: '3:36'}, {name: 'Zombies', duration: '4:41'}, {name: 'Riot', duration: '2:05'}, {name: 'Redbone', duration: '5:26'}, {name: 'California', duration: '2:45'}, {name: 'Terrified', duration: '4:15'}, {name: 'Baby Boy', duration: '6:22'}, {name: 'The Night Me and Your Mama Met', duration: '3:34'}, {name: 'Stand Tall', duration: '6:10'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022, [{name: 'United in Grief', duration: '4m 15s'}, {name: 'N95', duration: '3m 15s'}, {name: 'Worldwide Steppers', duration: '3m 23s'}, {name: 'Die Hard', duration: '3m 59s'}, {name: 'Father Time', duration: '3m 42s'}, {name: 'Rich (Interlude)', duration: '1m 43s'}, {name: 'Rich Spirit', duration: '3m 22s'}, {name: 'We Cry Together', duration: '5m 41s'}, {name: 'Purple Hearts', duration: '5m 29s'}, {name: 'Count Me Out', duration: '4m 43s'}, {name: 'Crown', duration: '4m 24s'}, {name: 'Silent Hill', duration: '3m 40s'}, {name: 'Savior (Interlude)', duration: '2m 32s'}, {name: 'Savior', duration: '3m 44s'}, {name: 'Auntie Diaries', duration: '4m 41s'}, {name: 'Mr. Morale', duration: '3m 30s'}, {name: 'Mother I Sober', duration: '6m 46s'}, {name: 'Mirror', duration: '4m 16s'}, {name: 'The Heart Part 5', duration: '5m 32s'}]));
+console.log('Adding new album to my collection:', addToCollection('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022, [{name: 'United in Grief', duration: '4:15'}, {name: 'N95', duration: '3:15'}, {name: 'Worldwide Steppers', duration: '3:23'}, {name: 'Die Hard', duration: '3:59'}, {name: 'Father Time', duration: '3:42'}, {name: 'Rich (Interlude)', duration: '1:43'}, {name: 'Rich Spirit', duration: '3:22'}, {name: 'We Cry Together', duration: '5:41'}, {name: 'Purple Hearts', duration: '5:29'}, {name: 'Count Me Out', duration: '4:43'}, {name: 'Crown', duration: '4:24'}, {name: 'Silent Hill', duration: '3:40'}, {name: 'Savior (Interlude)', duration: '2:32'}, {name: 'Savior', duration: '3:44'}, {name: 'Auntie Diaries', duration: '4:41'}, {name: 'Mr. Morale', duration: '3:30'}, {name: 'Mother I Sober', duration: '6:46'}, {name: 'Mirror', duration: '4:16'}, {name: 'The Heart Part 5', duration: '5:32'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Castor, The Twin', 'Dessa', 2011));
+console.log('Adding new album to my collection:', addToCollection('Castor, The Twin', 'Dessa', 2011, [{name: '551', duration: '4:00'}, {name: 'Kites', duration: '3:59'}, {name: 'Mineshaft', duration: '4:37'}, {name: 'The Chaconne', duration: '4:36'}, {name: 'Into The Spin', duration: '2:23'}, {name: "Dixon's Girl", duration: '3:17'}, {name: 'The Crow', duration: '3:13'}, {name: 'Alibi', duration: '3:39'}, {name: 'Palace', duration: '3:12'}, {name: 'Mineshaft 2', duration: '4:11'}, {name: 'The Beekeeper', duration: '4:06'}]));
 
 console.log('Adding new album to my collection:', addToCollection('Cleopatra (Deluxe)', 'The Lumineers', 2016));
 
@@ -136,33 +136,22 @@ console.log('Expected 2 albums. --->', search(collection, 'Ray Charles', 1957));
 
 
 
-console.log(collection[0]);
-
-// collection[1] = ('Awaken, My Love!', 'Childish Gambino', 2016));
-
-console.log(collection[1]);
-
-// collection[2] = ('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022));
-
-console.log(collection[2]);
-
 // collection[3] = ('Castor, The Twin', 'Dessa', 2011));
-collection[3].tracks=[{name: '', duration: ''}]
 
 console.log(collection[3]);
 
 // collection[4] = ('Cleopatra (Deluxe)', 'The Lumineers', 2016));
-collection[4].tracks=[{name: '', duration: ''}]
+collection[4].tracks=[{name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}]
 
 console.log(collection[4]);
 
 // collection[5] = ('Dark Eyes', 'Half Moon Run', 2013));
-collection[5].tracks=[{name: '', duration: ''}]
+collection[5].tracks=[{name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}]
 
 console.log(collection[5]);
 
 // collection[6] = ('Ray Charles', 'Ray Charles', 1957));
-collection[6].tracks=[{name: '', duration: ''}]
+collection[6].tracks=[{name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}]
 
 console.log(collection[6]);
 
