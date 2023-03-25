@@ -34,7 +34,7 @@ console.log('Adding new album to my collection:', addToCollection('Mr. Morale & 
 
 console.log('Adding new album to my collection:', addToCollection('Castor, The Twin', 'Dessa', 2011, [{name: '551', duration: '4:00'}, {name: 'Kites', duration: '3:59'}, {name: 'Mineshaft', duration: '4:37'}, {name: 'The Chaconne', duration: '4:36'}, {name: 'Into The Spin', duration: '2:23'}, {name: "Dixon's Girl", duration: '3:17'}, {name: 'The Crow', duration: '3:13'}, {name: 'Alibi', duration: '3:39'}, {name: 'Palace', duration: '3:12'}, {name: 'Mineshaft 2', duration: '4:11'}, {name: 'The Beekeeper', duration: '4:06'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Cleopatra (Deluxe)', 'The Lumineers', 2016));
+console.log('Adding new album to my collection:', addToCollection('Cleopatra (Deluxe)', 'The Lumineers', 2016, [{name: 'Sleep on the Floor', duration: '3:31'}, {name: 'Ophelia', duration: '2:40'}, {name: 'Cleopatra', duration: '3:21'}, {name: 'Gun Song', duration: '3:36'}, {name: 'Angela', duration: '3:21'}, {name: 'In the Light', duration: '3:51'}, {name: 'Gale Song', duration: '3:13'}, {name: 'Long Way from Home', duration: '2:32'}, {name: 'Sick in the Head', duration: '2:31'}, {name: 'My Eyes', duration: '3:36'}, {name: 'Patience', duration: '1:35'}, {name: 'Where the Skies Are Blue', duration: '2:20'}, {name: 'Everyone Requires a Plan', duration: '2:40'}, {name: 'White Lie', duration: '3:15'}, {name: 'Cleopatra (Acoustic demo)', duration: '4:48'}]));
 
 console.log('Adding new album to my collection:', addToCollection('Dark Eyes', 'Half Moon Run', 2013));
 
@@ -136,14 +136,6 @@ console.log('Expected 2 albums. --->', search(collection, 'Ray Charles', 1957));
 
 
 
-// collection[3] = ('Castor, The Twin', 'Dessa', 2011));
-
-console.log(collection[3]);
-
-// collection[4] = ('Cleopatra (Deluxe)', 'The Lumineers', 2016));
-collection[4].tracks=[{name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}]
-
-console.log(collection[4]);
 
 // collection[5] = ('Dark Eyes', 'Half Moon Run', 2013));
 collection[5].tracks=[{name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}]
