@@ -36,7 +36,7 @@ console.log('Adding new album to my collection:', addToCollection('Castor, The T
 
 console.log('Adding new album to my collection:', addToCollection('Cleopatra (Deluxe)', 'The Lumineers', 2016, [{name: 'Sleep on the Floor', duration: '3:31'}, {name: 'Ophelia', duration: '2:40'}, {name: 'Cleopatra', duration: '3:21'}, {name: 'Gun Song', duration: '3:36'}, {name: 'Angela', duration: '3:21'}, {name: 'In the Light', duration: '3:51'}, {name: 'Gale Song', duration: '3:13'}, {name: 'Long Way from Home', duration: '2:32'}, {name: 'Sick in the Head', duration: '2:31'}, {name: 'My Eyes', duration: '3:36'}, {name: 'Patience', duration: '1:35'}, {name: 'Where the Skies Are Blue', duration: '2:20'}, {name: 'Everyone Requires a Plan', duration: '2:40'}, {name: 'White Lie', duration: '3:15'}, {name: 'Cleopatra (Acoustic demo)', duration: '4:48'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Dark Eyes', 'Half Moon Run', 2013));
+console.log('Adding new album to my collection:', addToCollection('Dark Eyes', 'Half Moon Run', 2013, [{name: 'Full Circle', duration: '3:02'}, {name: 'Call Me in the Afternoon', duration: '3:04'}, {name: 'No More Losing the War', duration: '3:57'}, {name: 'She Wants to Know', duration: '4:12'}, {name: 'Need It', duration: '3:26'}, {name: 'Give Up', duration: '3:51'}, {name: 'Judgement', duration: '3:05'}, {name: 'Drug You', duration: '3:48'}, {name: 'Nerve', duration: '3:17'}, {name: 'Fire Escape', duration: '2:54'}, {name: '21 Gun Salute', duration: '4:52'}]));
 
 // After all are added, console.log the collection array.
 console.log('My album collection now includes:', collection);
@@ -91,7 +91,7 @@ console.log('\n--- Stretch Goals ---\n\n');
 // Create a function called search. This function should:
     // Take an input parameter for a search criteria object. Create your solution based on a search object that has these properties:
         // { artist: 'Ray Charles', year: 1957 }
-console.log('Adding new album to my collection:', addToCollection('Ray Charles', 'Ray Charles', 1957));
+console.log('Adding new album to my collection:', addToCollection('Ray Charles', 'Ray Charles', 1957, [{name: `Ain't That Love`, duration: '2:51'}, {name: 'Drown in My Own Tears', duration: '3:21'}, {name: 'Come Back Baby', duration: '3:06'}, {name: `Sinner's Prayer`, duration: '3:24'}, {name: 'Funny (But I Still Love You', duration: '3:15'}, {name: 'Losing Hand', duration: '3:14'}, {name: 'A Fool for You', duration: '3:03'}, {name: 'Halleluja I Love Her So', duration: '2:35'}, {name: 'Mess Around', duration: '2:40'}, {name: 'This Little Girl of Mine', duration: '2:33'}, {name: 'Mary Ann', duration: '2:48'}, {name: 'Greenbacks', duration: '2:52'}, {name: `Don't You Know`, duration: '2:57'}, {name: 'I Got a Woman', duration: '2:51'}]));
 /* This was Ray Charles' first studio album, it was later re-released under the tile of Hallelujah I Love Her So in 1962
 */
 
@@ -135,15 +135,4 @@ console.log('Expected 2 albums. --->', search(collection, 'Ray Charles', 1957));
             // 2. NAME: DURATION
 
 
-
-
-// collection[5] = ('Dark Eyes', 'Half Moon Run', 2013));
-collection[5].tracks=[{name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}]
-
-console.log(collection[5]);
-
-// collection[6] = ('Ray Charles', 'Ray Charles', 1957));
-collection[6].tracks=[{name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}, {name: '', duration: ''}]
-
-console.log(collection[6]);
 
