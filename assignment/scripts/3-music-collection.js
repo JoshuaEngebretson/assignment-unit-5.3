@@ -53,6 +53,7 @@ function showCollection(array) {
 console.log(showCollection(collection));
 
 
+console.log('--- findByArtist ---');
 // Add a function named findByArtist. This function should:
     // Take in artist (a string) parameter
 function findByArtist(artist){
@@ -111,6 +112,8 @@ console.log('Expected empty array. --->', search(collection, 'Metallica', 1991))
 addToCollection('Test multiple ablums', 'Ray Charles', 1957)
 console.log('Expected 2 albums. --->', search(collection, 'Ray Charles', 1957));
 
+
+
 // Add an array of tracks to your album objects. Each track should have a name and duration. You will need to update the functions to support this new property:
     // Update the addToCollection function to also take an input parameter for the array of tracks.
     // Update search to allow a trackName search criteria.
@@ -123,3 +126,29 @@ console.log('Expected 2 albums. --->', search(collection, 'Ray Charles', 1957));
             // TITLE by ARTIST, published in YEAR:
             // 1. NAME: DURATION
             // 2. NAME: DURATION
+
+
+
+
+// collection[0] = ('Camp', 'Childish Gambino', 2011));
+collection[0].tracks=[{name: 'Outside', duration: '4m 30s'}, {name: 'Fire Fly', duration: '3m 23s'}, {name: 'Bonfire', duration: '3m 13s'}, {name: 'All the Shine', duration: '5m 46s'}, {name: 'Letter Home', duration: '1m 44s'}, {name: 'Heartbeat', duration: '4m 30s'}, {name: 'Backpackers', duration: '3m 16s'}, {name: 'Les', duration: '5m 17s'}, {name: 'Hold You Down', duration: '4m 53s'}, {name: 'Kids', duration: '4m 58s'}, {name: 'You See Me', duration: '3m 15s'}, {name: 'Sunrise', duration: '3m 40s'}, {name: 'That Power', duration: '7m 42s'}];
+
+// collection[1] = ('Awaken, My Love!', 'Childish Gambino', 2016));
+collection[1].tracks=[{name: '', duration: ''}]
+
+// collection[2] = ('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022));
+collection[2].tracks=[{name: '', duration: ''}]
+
+// collection[3] = ('Castor, The Twin', 'Dessa', 2011));
+collection[3].tracks=[{name: '', duration: ''}]
+
+// collection[4] = ('Cleopatra (Deluxe)', 'The Lumineers', 2016));
+collection[4].tracks=[{name: '', duration: ''}]
+
+// collection[5] = ('Dark Eyes', 'Half Moon Run', 2013));
+collection[5].tracks=[{name: '', duration: ''}]
+
+// collection[6] = ('Ray Charles', 'Ray Charles', 1957));
+collection[6].tracks=[{name: '', duration: ''}]
+
+console.log(collection[0]);
