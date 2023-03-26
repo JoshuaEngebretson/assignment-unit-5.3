@@ -27,21 +27,21 @@ function addToCollection(title, artist, yearPublished, tracks){
         //(Feel free to share your musical interests, or make stuff up. Totally fine either way.)
     // Console.log each album as added using the returned value.
     
-console.log('Adding new album to my collection:', addToCollection('Camp', 'Childish Gambino', 2011,
+console.log('Adding new album to my collection:', addToCollection('Camp', 'Childish Gambino', 2011, //due to readability the album tracks are 3 per line.
     [{name: 'Outside', duration: '4:30'}, {name: 'Fire Fly', duration: '3:23'}, {name: 'Bonfire', duration: '3:13'},
     {name: 'All the Shine', duration: '5:46'}, {name: 'Letter Home', duration: '1:44'}, {name: 'Heartbeat', duration: '4:30'},
     {name: 'Backpackers', duration: '3:16'}, {name: 'Les', duration: '5:17'}, {name: 'Hold You Down', duration: '4:53'},
     {name: 'Kids', duration: '4:58'}, {name: 'You See Me', duration: '3:15'}, {name: 'Sunrise', duration: '3:40'},
     {name: 'That Power', duration: '7:42'}, {name: 'testTrack01', duration: '0:00'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Awaken, My Love!', 'Childish Gambino', 2016,
+console.log('Adding new album to my collection:', addToCollection('Awaken, My Love!', 'Childish Gambino', 2016, //due to readability the album tracks are 3 per line.
     [{name: 'Me and Your Mama', duration: '6:19'}, {name: 'Have Some Love', duration: '3:44'}, {name: 'Boogieman', duration: '3:36'},
     {name: 'Zombies', duration: '4:41'}, {name: 'Riot', duration: '2:05'}, {name: 'Redbone', duration: '5:26'},
     {name: 'California', duration: '2:45'}, {name: 'Terrified', duration: '4:15'}, {name: 'Baby Boy', duration: '6:22'},
     {name: 'The Night Me and Your Mama Met', duration: '3:34'}, {name: 'Stand Tall', duration: '6:10'},
     {name: 'testTrack01', duration: '0:00'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022,
+console.log('Adding new album to my collection:', addToCollection('Mr. Morale & The Big Steppers', 'Kendrick Lamar', 2022, //due to readability the album tracks are 3 per line.
     [{name: 'United in Grief', duration: '4:15'}, {name: 'N95', duration: '3:15'}, {name: 'Worldwide Steppers', duration: '3:23'},
     {name: 'Die Hard', duration: '3:59'}, {name: 'Father Time', duration: '3:42'}, {name: 'Rich (Interlude)', duration: '1:43'},
     {name: 'Rich Spirit', duration: '3:22'}, {name: 'We Cry Together', duration: '5:41'}, {name: 'Purple Hearts', duration: '5:29'},
@@ -50,20 +50,20 @@ console.log('Adding new album to my collection:', addToCollection('Mr. Morale & 
     {name: 'Mr. Morale', duration: '3:30'}, {name: 'Mother I Sober', duration: '6:46'}, {name: 'Mirror', duration: '4:16'},
     {name: 'The Heart Part 5', duration: '5:32'}, {name: 'testTrack01', duration: '0:00'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Castor, The Twin', 'Dessa', 2011,
+console.log('Adding new album to my collection:', addToCollection('Castor, The Twin', 'Dessa', 2011, //due to readability the album tracks are 3 per line.
     [{name: '551', duration: '4:00'}, {name: 'Kites', duration: '3:59'}, {name: 'Mineshaft', duration: '4:37'},
     {name: 'The Chaconne', duration: '4:36'}, {name: 'Into The Spin', duration: '2:23'}, {name: "Dixon's Girl", duration: '3:17'},
     {name: 'The Crow', duration: '3:13'}, {name: 'Alibi', duration: '3:39'}, {name: 'Palace', duration: '3:12'},
     {name: 'Mineshaft 2', duration: '4:11'}, {name: 'The Beekeeper', duration: '4:06'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Cleopatra (Deluxe)', 'The Lumineers', 2016,
+console.log('Adding new album to my collection:', addToCollection('Cleopatra (Deluxe)', 'The Lumineers', 2016, //due to readability the album tracks are 3 per line.
     [{name: 'Sleep on the Floor', duration: '3:31'}, {name: 'Ophelia', duration: '2:40'}, {name: 'Cleopatra', duration: '3:21'},
     {name: 'Gun Song', duration: '3:36'}, {name: 'Angela', duration: '3:21'}, {name: 'In the Light', duration: '3:51'},
     {name: 'Gale Song', duration: '3:13'}, {name: 'Long Way from Home', duration: '2:32'}, {name: 'Sick in the Head', duration: '2:31'},
     {name: 'My Eyes', duration: '3:36'}, {name: 'Patience', duration: '1:35'}, {name: 'Where the Skies Are Blue', duration: '2:20'},
     {name: 'Everyone Requires a Plan', duration: '2:40'}, {name: 'White Lie', duration: '3:15'}, {name: 'Cleopatra (Acoustic demo)', duration: '4:48'}]));
 
-console.log('Adding new album to my collection:', addToCollection('Dark Eyes', 'Half Moon Run', 2013,
+console.log('Adding new album to my collection:', addToCollection('Dark Eyes', 'Half Moon Run', 2013, //due to readability the album tracks are 3 per line.
     [{name: 'Full Circle', duration: '3:02'}, {name: 'Call Me in the Afternoon', duration: '3:04'}, {name: 'No More Losing the War', duration: '3:57'},
     {name: 'She Wants to Know', duration: '4:12'}, {name: 'Need It', duration: '3:26'}, {name: 'Give Up', duration: '3:51'},
     {name: 'Judgement', duration: '3:05'}, {name: 'Drug You', duration: '3:48'}, {name: 'Nerve', duration: '3:17'},
@@ -72,42 +72,31 @@ console.log('Adding new album to my collection:', addToCollection('Dark Eyes', '
 // After all are added, console.log the collection array.
 console.log('My album collection now includes:', collection);
 
-let Tracks = collection.tracks
 
+
+let Tracks = collection.tracks //declared for easier looping within showCollection function
 console.log('\n--- showCollection ---\n\n');
 // Add a function named showCollection. This function should:
     // Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
 function showCollection(collection_to_search) {
     // Console.log the number of items in the array.
     console.log('The following', collection_to_search.length, 'albums are in my collection');
+    let x = 1; // Created x to track the track position within each album
     // Loop over the array and console.log each album's information formatted like: TITLE by ARTIST, published in YEAR.
-    for (let i = 0; i < collection_to_search.length; i++) {
-        console.log(`${collection_to_search[i].title} by ${collection_to_search[i].artist}, published in ${collection_to_search[i].yearPublished}:`);
-        for (let track in Tracks) {
-            console.log(`${track.name}: ${track.duration}`);
-        }
-    }
-    return `End showCollection`
-}
-
-function showCollection2(collection_to_search){
-    console.log('The following', collection_to_search.length, 'albums are in my collection');
-    let x = 1;
     for (let album of collection_to_search) {
-        console.log(`\n\n${album.title} by ${album.artist}, published in ${album.yearPublished}:`);
+        console.log(`\n${album.title} by ${album.artist}, published in ${album.yearPublished}:`);
         for (track of album.tracks) {
             console.log(`${x}. ${track.name}: ${track.duration}`);
-            x++
+            x++ //advances x so that next track will be logged with the next number in sequence
         }
-        x = 1;
+        x = 1; //resets x to 1, this allows us to constantly start at track 1 for each new album
     }
-}
-
+    return `\nEnd of this collection\n\n`
+};
 
 // Test the showCollection function.
 console.log(showCollection(collection));
 
-console.log(showCollection2(collection));
 
 
 console.log('\n--- findByArtist ---\n\n');
@@ -125,13 +114,15 @@ function findByArtist(artist_to_find){
     }
     // Return the array with the matching results. If no results are found, return an empty array.
     return albums_by_artist
-}
+};
+
+
 
 // Test the findByArtist function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection.
 //Check that for artists with multiple matches, all are found.
-console.log('Is Metallica in my current collection? Expected [] ---->', findByArtist('Metallica'));
-console.log('Is Dessa in my current collection?', findByArtist('Dessa'));
-console.log('Is Childish Gambino in my currenct collection?', findByArtist('Childish Gambino'));
+console.log('Is Metallica in my current collection? Expected empty array --->', findByArtist('Metallica'));
+console.log('Is Dessa in my current collection? Expected 1 album --->', findByArtist('Dessa'));
+console.log('Is Childish Gambino in my currenct collection? Expected 2 albums --->', findByArtist('Childish Gambino'));
 
 
 // When testing your functions, write all tests in the JavaScript file!
@@ -232,8 +223,8 @@ console.log('Expected 2 albums. (There are now 2 albums by Ray Charles from 1957
 /*
 I am unsure why the line below doesn't work, it tells me
     "3-music-collection.js:143 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
-    at search (3-music-collection.js:143:46)
-    at 3-music-collection.js:220:97""
+    at search (3-music-collection.js:149:46)
+    at 3-music-collection.js:230:97""
 What I find odd is that I don't get this error until I try to test multiple albums with the same trackName
 */
 // console.log('Expected 3 albums. (There are 3 albums with the track titled "testTrack01") --->', search(testSearch7_UniversalTrack));
