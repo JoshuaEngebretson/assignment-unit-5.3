@@ -19,7 +19,7 @@ function addToCollection(title, artist, yearPublished, tracks){
     collection.push(newAlbum)
     // Return the newly created object
     return newAlbum
-};
+}; //End addToCollection
 
 
 // Test the addToCollection function:
@@ -92,7 +92,7 @@ function showCollection(collection_to_search) {
         x = 1; //resets x to 1, this allows us to constantly start at track 1 for each new album
     }
     return `\nEnd of this collection\n\n`
-};
+};//End showCollection
 
 // Test the showCollection function.
 console.log(showCollection(collection));
@@ -114,7 +114,7 @@ function findByArtist(artist_to_find){
     }
     // Return the array with the matching results. If no results are found, return an empty array.
     return albums_by_artist
-};
+};// End findByArtist
 
 
 
@@ -122,7 +122,7 @@ function findByArtist(artist_to_find){
 //Check that for artists with multiple matches, all are found.
 console.log('Is Metallica in my current collection? Expected empty array --->', findByArtist('Metallica'));
 console.log('Is Dessa in my current collection? Expected 1 album --->', findByArtist('Dessa'));
-console.log('Is Childish Gambino in my currenct collection? Expected 2 albums --->', findByArtist('Childish Gambino'));
+console.log('Is Childish Gambino in my current collection? Expected 2 albums --->', findByArtist('Childish Gambino'));
 
 
 // When testing your functions, write all tests in the JavaScript file!
@@ -152,11 +152,11 @@ function search(SearchObject){
                 }
             }
         }
-        console.log('\ntesting trackName only\n\n');
+        console.log('\ntesting trackName only\n\n'); //this is put in as without it, I wasn't able to confirm if I was searching /returning based on the trackname alone.
         return albums_matching_parameters
     }
     for (let i = 0; i < collection.length; i++) {
-        // for (track of collection[i].tracks)
+        //test if both artist AND yearPublished match the search criteria, then adds to new array
         if (collection[i].artist === SearchObject.artist && collection[i].yearPublished === SearchObject.year) {
             albums_matching_parameters.push(collection[i])
         }
@@ -165,11 +165,18 @@ function search(SearchObject){
         // Return a new array of all items in the collection matching all of the search criteria.
         // If no results are found, return an empty array.
         // If there is no search object or an empty search object provided as input, then return all albums in the collection.
+    //if either .artist or .year are undefined in the SearchObject parameter, then the whole collection is returned instead.
     if( SearchObject.artist === undefined || SearchObject.year === undefined){
+        if (SearchObject.artist === undefined) { //logs what was missing from SearchObject that made the function provide whole collection instead
+            console.log('\n.artist was undefined in the provided SearchObject'); 
+        } else {
+            console.log('\n.year was undefined in the provided SearchObject');
+        }
         return collection
     }
     return albums_matching_parameters
-}
+};// End search
+
 
 //Building test "criteria" for search function
 let testSearch1_RayCharles = {
@@ -186,7 +193,7 @@ let testSearch2_ChildishGambino_Track = {
 let testSearch2_ChildishGambino_noTrack = {
     artist: 'Childish Gambino',
     year: 2011
-}
+};
 
 testSearch3_noArtist = {
     year: 2011,
@@ -203,18 +210,19 @@ testSearch5_onlyTrackName = {
 testSearch6_Metallica = {
     artist: 'Metallica',
     year: 1991,
-}
+};
 
 testSearch7_UniversalTrack = {
     trackName: 'testTrack01'
-}
+};
 
+//testing for search function
 console.log('Expected one album. --->', search(testSearch1_RayCharles));
 console.log('Expected One album. (ChildishGambino_Track) --->', search(testSearch2_ChildishGambino_Track));
 console.log('Expected One album. (ChildishGambino_noTrack) --->', search(testSearch2_ChildishGambino_noTrack));
 console.log('Expected One album. (onlyTrackName) --->', search(testSearch5_onlyTrackName));
-console.log('Expected whole collection due to missing parameter. (noArtist) --->', search(testSearch3_noArtist));
-console.log('Expected whole collection due to missing parameter. (noYear) --->', search(testSearch4_noYear));
+console.log('Expected whole collection due to missing parameter. \n(noArtist) --->', search(testSearch3_noArtist));
+console.log('Expected whole collection due to missing parameter. \n(noYear) --->', search(testSearch4_noYear));
 console.log('Expected empty array. (testSearch6_Metallica Metallica is not in collection) --->', search(testSearch6_Metallica));
 
 console.log('Adding new album to my collection:', addToCollection('Test multiple ablums', 'Ray Charles', 1957));
