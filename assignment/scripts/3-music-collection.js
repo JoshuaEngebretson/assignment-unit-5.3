@@ -90,9 +90,24 @@ function showCollection(collection_to_search) {
     return `End showCollection`
 }
 
+function showCollection2(collection_to_search){
+    console.log('The following', collection_to_search.length, 'albums are in my collection');
+    let x = 1;
+    for (let album of collection_to_search) {
+        console.log(`\n\n${album.title} by ${album.artist}, published in ${album.yearPublished}:`);
+        for (track of album.tracks) {
+            console.log(`${x}. ${track.name}: ${track.duration}`);
+            x++
+        }
+        x = 1;
+    }
+}
+
 
 // Test the showCollection function.
 console.log(showCollection(collection));
+
+console.log(showCollection2(collection));
 
 
 console.log('\n--- findByArtist ---\n\n');
