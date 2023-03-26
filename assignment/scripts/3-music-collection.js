@@ -221,8 +221,8 @@ console.log('Expected one album. --->', search(testSearch1_RayCharles));
 console.log('Expected One album. (ChildishGambino_Track) --->', search(testSearch2_ChildishGambino_Track));
 console.log('Expected One album. (ChildishGambino_noTrack) --->', search(testSearch2_ChildishGambino_noTrack));
 console.log('Expected One album. (onlyTrackName) --->', search(testSearch5_onlyTrackName));
-console.log('Expected whole collection due to missing parameter. \n(noArtist) --->', search(testSearch3_noArtist));
-console.log('Expected whole collection due to missing parameter. \n(noYear) --->', search(testSearch4_noYear));
+console.log('Expected whole collection due to missing parameter. (noArtist) --->', search(testSearch3_noArtist));
+console.log('Expected whole collection due to missing parameter. (noYear) --->', search(testSearch4_noYear));
 console.log('Expected empty array. (testSearch6_Metallica Metallica is not in collection) --->', search(testSearch6_Metallica));
 
 console.log('Adding new album to my collection:', addToCollection('Test multiple ablums', 'Ray Charles', 1957));
